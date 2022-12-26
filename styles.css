@@ -1,1 +1,97 @@
-/* your code here */
+body {
+  font-family: sans-serif;
+  background: mediumspringgreen;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  place-items: center;
+}
+
+.flow-space > * + * {
+  margin-top: var(--spacer, 1em);
+}
+h4 {
+  text-transform: uppercase;
+  color: gray;
+  font-weight: bolder;
+}
+
+.title h1 {
+  margin-bottom: 0;
+}
+.title span {
+  color: gray;
+}
+
+.price {
+  color: red;
+}
+
+.price span {
+  font-size: 3em;
+}
+.product {
+  display: flex;
+  background: white;
+  text-align: left;
+  padding: 3em 0;
+  border-radius: 10px;
+}
+
+.product__photo {
+  align-self: flex-start;
+  border-radius: 10px;
+  transform: translateX(-30px);
+  box-shadow: 10px 5px 5px gray;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.photo-main {
+  background: lawngreen;
+  color: white;
+  padding: 1em 1em 3em 1em;
+  border-radius: 10px;
+}
+
+.photo-album > ul,
+.variant > ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 0.5em;
+  margin: 0;
+  background: white;
+}
+.photo-album > ul {
+  padding: 2em;
+  border-radius: 10px;
+}
+.variant > ul {
+  justify-content: flex-start;
+}
+
+.variant img {
+  width: 40px;
+}
+
+.photo-album li {
+  border: 1px solid gray;
+}
+
+.buy {
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  padding: 1em 2em;
+  font-weight: bold;
+}
+.product__info {
+  --spacer: 2em;
+  padding: 1em;
+}
